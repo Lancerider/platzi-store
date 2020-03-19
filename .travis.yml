@@ -14,13 +14,14 @@ script:
   - yarn build
 
 notifications:
+  slack: skyairlinedes-wgr2685:CzxtSptS3OXBVarkM88CFGR1
   email:
     recipients:
       - jorgepalacioscl@gmail.com
       - empresapalacios@gmail.com
     on_success: always
     on_failure: always
-    
+
 deploy:
   provider: pages
   skip-cleanup: true
